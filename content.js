@@ -10,8 +10,8 @@ function removeMarketplace(url) {
 }
 
 window.onload = function() {
-    chrome.storage.local.get("switch_only_amazon", function(value) {
-        var value_data = value.switch_only_amazon;
+    chrome.storage.local.get("switch_enable", function(value) {
+        var value_data = value.switch_enable;
         if (value_data === false) {
             return;
         }
